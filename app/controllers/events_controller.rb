@@ -2,6 +2,9 @@ class EventsController < ApplicationController
     def index 
 
     end
+    def show 
+        @current_event = current_user.events.find_by(params[:id])
+    end
     def new 
         @event = current_user.events.build
     end

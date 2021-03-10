@@ -13,3 +13,12 @@
  *= require_tree .
  *= require_self
  */
+
+ .events {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 20px;
+     .footer-card {
+         width: 80%;
+     }
+ }
