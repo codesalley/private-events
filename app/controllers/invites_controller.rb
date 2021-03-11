@@ -13,7 +13,6 @@ class InvitesController < ApplicationController
     end
   end
 
-
   private
 
   def invite_params
