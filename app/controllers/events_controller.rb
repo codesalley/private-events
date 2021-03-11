@@ -1,10 +1,10 @@
 class EventsController < ApplicationController
-    before_action :authenticate_user!
+    before_action :authenticate_user!, only: %i[create, new]
+    before_action :find_event, only: %i[edit show update]
     def index 
 
     end
     def show 
-        @current_event = current_user.events.find_by(params[:id])
     end
     def new 
         @event = current_user.events.build
@@ -21,5 +21,8 @@ class EventsController < ApplicationController
     private 
     def new_event_params 
         params.require(:event).permit(:title, :venue, :descrption, :date)
+    end
+    def find_event 
+        @current_event = Event.find(params[:id])
     end
 end
