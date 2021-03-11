@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
     <div class="container-fluid">
-      <%= link_to 'New Event', root_path , class: 'navbar-brand'  %>
+      <%= link_to 'New Event', root_path , class: 'navbar-brand '  %>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -11,6 +11,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Upcoming Events</a>
+          </li>
+          <li class="nav-item">
+            <%= link_to 'Invite Guest', new_invite_path, class: 'btn btn-outline-primary' %>
           </li>
         </ul>
         <form class="d-flex gap-2">
