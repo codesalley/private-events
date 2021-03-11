@@ -1,4 +1,15 @@
-<div class="user-events container-xl">
-  <h3 class="text-center p-4">All events created</h3>
-  <%= render partial: 'events' %>
+<div class="home-body container ">
+    <h2 class="text-center p-4">welcome</h2>
+
+    <div class="d-flex flex-wrap gap-4 justify-content-center">
+        <p class="text-center p-2">---- Past Events -----</p>
+        <%= render 'past_events', past_event: @past_events %>
+        <p class="text-center p-2">---- Upcoming Events ----</p>
+        <%= render 'upcoming_events', upcoming_event: @upcoming_events %>
+    
+    </div>
+    
 </div>
+
+
+

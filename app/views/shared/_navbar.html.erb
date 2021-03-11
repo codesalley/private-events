@@ -6,22 +6,13 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <%= link_to 'All Events', events_path, class: 'nav-link active' %>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Upcoming Events</a>
+          <li class="nav-item ">
+            <%= link_to 'All Events', root_path, class: 'nav-link active pb-2' %>
           </li>
         </ul>
         <form class="d-flex gap-2">
-          <% if user_signed_in? %>
-          <div class="profile text-white align-self-center"> <%= current_user.email.split('@')[0].capitalize %></div>
-          <%= link_to 'New Event', new_event_path , class: 'btn btn-outline-success'  %>
-          <%= link_to 'Log out', new_event_path , class: 'btn btn-outline-danger'  %>
-          <% else %>
-          <%= link_to 'Create Account', new_user_registration_path , class: 'btn btn-outline-success'  %>
-          <%= link_to 'Log in', new_user_session_path , class: 'btn btn-outline-danger'  %>
-          <% end %>
+          <%= render partial: "shared/#{nav_items}" %>
+
           
         </form>
       </div>
