@@ -1,4 +1,9 @@
+
+
 <div class="profile text-white align-self-center">ID: <%= current_user.id %></div>
+<%= link_to  user_profile_path, class: 'profile text-white align-self-center text-decoration-none btn btn-outline-success' do  %>
 <div class="profile text-white align-self-center"> <%= current_user.email.split('@')[0].capitalize %></div>
+<% end %>
+
 <%= link_to 'New Event', new_event_path , class: 'btn btn-outline-success'  %>
 <%= link_to 'Log out', destroy_user_session_path, method: :delete , class: 'btn btn-outline-danger'  %>
