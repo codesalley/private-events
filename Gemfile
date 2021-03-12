@@ -24,8 +24,6 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'rexml'
 
-
-
 gem 'devise'
 
 # Use Active Storage variant
@@ -56,8 +54,8 @@ group :test do
   gem 'capybara', '>= 3.26'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
-  gem 'webdrivers'
   gem 'shoulda-matchers', '~> 4.0'
+  gem 'webdrivers'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
