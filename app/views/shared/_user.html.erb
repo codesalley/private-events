@@ -1,6 +1,4 @@
 
-
-<div class="profile text-white align-self-center">ID: <%= current_user.id %></div>
 <%= link_to  user_profile_path, class: 'profile text-white align-self-center text-decoration-none btn btn-outline-success' do  %>
 <div class="profile text-white align-self-center"> <%= current_user.email.split('@')[0].capitalize %></div>
 <% end %>

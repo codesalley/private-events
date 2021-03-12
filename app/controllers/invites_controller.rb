@@ -1,6 +1,8 @@
 class InvitesController < ApplicationController
   def new
     @invite = Invite.new
+    @guest_options = User.all.map{|guest| [ guest.email, guest.id]}
+    @event_options = Event.all.map{|guest| [ guest.title, guest.id]}
   end
 
   def create

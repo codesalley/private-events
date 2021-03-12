@@ -40,9 +40,9 @@ If you intend to download the project, you will need to have Ruby and Rails alre
 
 👤 **Salley Iddrisu**
 
-- GitHub: [@github](https://github.com/juxsalley)
-- Twitter: [@twitter](https://twitter.com/__salley)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dev-salley)
+- GitHub: [juxsalley](https://github.com/juxsalley)
+- Twitter: [__salley](https://twitter.com/__salley)
+- LinkedIn: [iddrisu salley](https://www.linkedin.com/in/dev-salley)
 
 🤝 Contributing
 

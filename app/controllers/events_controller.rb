@@ -17,7 +17,7 @@ class EventsController < ApplicationController
     if @event.save
       redirect_to root_path, notice: 'Event Posted'
     else
-      redirect_to :new
+      redirect_to new_event_path, alert: 'Invalid event, make sure all fields are filled'
     end
   end
 
