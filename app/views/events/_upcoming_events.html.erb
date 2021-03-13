@@ -1,0 +1,27 @@
+<div class="event d-flex gap-2">
+  <%if !upcoming_event.nil? %>
+   <% upcoming_event.each do |event| %>
+  <%= link_to event_path(event), class: 'text-decoration-none text-dark p-0 m-0' do %>
+  <div class="card event w-35">
+    <%= image_tag('event_demo.jpg', class:"card-img-top") %>
+    <div class="card-body">
+      <h5 class="card-title"><%= event.title %></h5>
+      <p class="card-text"><%= event.descrption %></p>
+      <footer class="blockquote-footer d-flex gap-2">
+        <p><em> <%= event.event_creator.email.split('@')[0] %> </em></p>
+        <cite title="Source Title"
+          ><p><%= format_events_date(event.date) %></p></cite
+        >
+      </footer>
+      <div
+        class="footer-card d-flex position-absolute bottom-0 py-2"
+      >
+        <%= link_to 'Invite Guest', new_invitation_path, class: 'btn
+        btn-outline-success' %>
+
+      </div>
+    </div>
+  </div>
+  <% end %>
+  <% end %> <% end %>
+</div>

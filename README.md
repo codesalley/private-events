@@ -1,24 +1,55 @@
-# README
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Private-Events
 
-Things you may want to cover:
+Private events allows users to create, attend and invite other users to the event, Events has upcoming and passed events.
 
-* Ruby version
+## Private-Events project features:
 
-* System dependencies
+- Create an account and create a post
+- Resistrict non users to attend or view events
+- Users to invite other users to an event by specifying user ID and event ID
 
-* Configuration
+## Built With
 
-* Database creation
+- Ruby on Rails
+- Bootstrap
+- devise
 
-* Database initialization
+## Getting Started
 
-* How to run the test suite
+### Prerequisites
 
-* Services (job queues, cache servers, search engines, etc.)
+If you intend to download the project, you will need to have Ruby and Rails already installed on your local machine.
 
-* Deployment instructions
+- For more information on how to install Ruby, follow [this link.](https://www.ruby-lang.org/en/downloads/)
+- For more information on how to install Rails, follow [this link.](https://guides.rubyonrails.org/getting_started.html/)
 
-* ...
+## Getting Started
+
+### Setup
+
+1. Run `git clone https://github.com/juxsalley/private-events.git` => to clone the source code
+2. Run `cd private-events` => to change directory
+3. Run `bundle install` => to install all of the gems
+4. Run `rails db:migrate` to migrate all tables
+5. Run `rails s` => to start the server
+6. Open `localhost:3000` on a browser of your choice
+
+## Author
+
+👤 **Salley Iddrisu**
+
+- GitHub: [juxsalley](https://github.com/juxsalley)
+- Twitter: [__salley](https://twitter.com/__salley)
+- LinkedIn: [iddrisu salley](https://www.linkedin.com/in/dev-salley)
+
+🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/juxsalley/private-events/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
