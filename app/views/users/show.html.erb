@@ -1,0 +1,18 @@
+<div class="home-body container ">
+    <h2 class="text-center p-4">welcome</h2>
+
+    <div class="d-flex flex-wrap gap-4 justify-content-center flex-column">
+        
+        <p class="text-center p-2">
+            ---- <%= current_user.email.split('@')[0].capitalize %> Created Events -----</p>
+            <%= render 'created_events', created_events: current_user.events %>
+        <p class="text-center p-2">
+            ----<%= current_user.email.split('@')[0].capitalize %> Attended Past Events -----</p>
+        <%= render 'past_events', past_event: @user_past_events %>
+        <p class="text-center p-2">
+            ----<%= current_user.email.split('@')[0].capitalize %> Upcoming Invited Events ----</p>
+        <%= render 'upcoming_events', upcoming_event: @user_upcoming_events %>
+    
+    </div>
+    
+</div>

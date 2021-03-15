@@ -1,0 +1,10 @@
+<% if @current_event %> 
+<% @current_event.attendee.each_with_index do |guest, idx| %>
+
+<div class="list-group-item d-flex justify-content-between container">
+  <p>index: <%= idx  += 1%></p>
+  <p>name: <%= guest.email.split('@')[0] %></p>
+  <p>email: <%= guest.email%></p>
+</div>
+<br />
+<% end %> <% end %>
