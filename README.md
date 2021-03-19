@@ -25,7 +25,7 @@ If you intend to download the project, you will need to have Ruby and Rails alre
 - For more information on how to install Ruby, follow [this link.](https://www.ruby-lang.org/en/downloads/)
 - For more information on how to install Rails, follow [this link.](https://guides.rubyonrails.org/getting_started.html/)
 
-## Getting Started
+
 
 ### Setup
 
